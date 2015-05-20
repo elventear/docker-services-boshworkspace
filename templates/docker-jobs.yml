@@ -1,8 +1,11 @@
 networks: (( merge ))
 
+meta: (( merge ))
+
 jobs:
   - name: docker
     templates:
+      - (( meta.appfirst.template ))
       - name: docker
       - name: cf-containers-broker
     instances: 1
