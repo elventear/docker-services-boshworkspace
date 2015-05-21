@@ -25,7 +25,6 @@ meta:
     properties:
       tenant_id: APPFIRST_TENANT_ID 
       frontend_url: APPFIRST_FRONTEND_URL
-      backend_url: APPFIRST_BACKEND_URL
       server_tags:
         - cloud_foundry
     template:
