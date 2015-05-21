@@ -10,6 +10,7 @@ jobs:
       - name: docker
         release: docker
       - name: cf-containers-broker
+        release: docker
     instances: 1
     resource_pool: default
     persistent_disk: 65536
