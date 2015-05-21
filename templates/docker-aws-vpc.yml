@@ -17,9 +17,6 @@ meta:
         security_groups: (( meta.security_groups ))
         subnet: (( meta.subnet_ids.docker ))
 
-properties:
-  appfirst (( meta.appfirst.properties ))
-
 networks:
   - name: default
     type: manual

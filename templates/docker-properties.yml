@@ -1,4 +1,5 @@
 meta:
+  appfirst: (( merge ))
   cfcontainersbroker:
     cc_api_uri: (( merge || "https://api.10.244.0.34.xip.io" ))
     external_host: (( merge || "cf-containers-broker.10.244.0.34.xip.io" ))
@@ -8,6 +9,7 @@ meta:
   nats: (( merge || meta.nats ))
 
 properties:
+  appfirst: (( meta.appfirst.properties ))
   nats: (( meta.nats ))
   cfcontainersbroker:
     auth_username: (( meta.cfcontainersbroker.auth_username ))
